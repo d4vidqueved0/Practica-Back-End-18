@@ -23,7 +23,7 @@
         }
     </style>
     <nav style="background-color: #1E1E1E; height: 7em; color: white; position: fixed; z-index: 1000; width: 100%; top: 0;">
-        <div style="display: grid; grid-template-columns: 1fr 3.5fr; height: 100%; width: 100%; padding: 0px 10em;align-items: center;">
+        <div style="display: grid; grid-template-columns: 1fr 3.5fr; height: 100%; width: 100%; padding: 0px calc(135px + (201 * ((100vw - 1536px) / (1920 - 1536))));align-items: center;">
             <a style="gap:0px;" href="{% url  'inicio:inicio' %}">
                 <img src="static/images/logo-footer.png" height="35px" alt="">
             </a>
