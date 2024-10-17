@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<title>
+
+    {% block title %}Empresas - portal.inacap.cl{% endblock %}
+</title>
+<style>
+    .div-image{
+        background-image: url("{% static 'images/2400x715-header-servicios-para-empresas.png' %}");
+    }
+</style>
+
+<div class="div-image" style="filter: contrast(1.2); height: 25em; background-size: cover;margin-top: 112px; display: flex;position: relative;background-position: center;">
+    <div style="background-color: rgb(30, 30, 30, .5); width: 100%; height: 100% ;position: absolute; bottom: 0; display: flex; justify-content: center; align-items: center;">
+        <h2 style="color: white; font-size: 48px; font-weight: bold; margin-bottom: 12vh;">Servicios para Empresas</h2>
+    </div>
+</div>
+
+<div style="height: fit-content; justify-content: space-between; align-items: start;display: flex; width: 100%; padding: 50px calc(135px + (201 * ((100vw - 1536px) / (1920 - 1536)))); flex-direction: column; gap: 15px">
+    <div style="display: flex; gap: 5px;">
+        <i style="background-color: #cc0000; min-height: 100%; width: 5px;" ></i>
+        <h2 style="margin: 0px; line-height: 1;font-weight: bold; font-size: 35px;">Prácticas y Empleabilidad</h2>
+    </div>
+    <p style="font-size: 14px; font-weight: 400; margin-bottom: 50px;">En Emplea INACAP, empresas y organizaciones podrán acceder a distintos servicios que les permitirán gestionar sus procesos de reclutamiento y atracción de talento, con tecnología y el apoyo de un equipo a lo largo de todo Chile.
+    </p>
+    <div style="display: flex; flex-wrap: wrap; gap: 15px; width: 100%; justify-content: space-between;">
+
+        <div style="background-color: #222220; height: 310px; width: 610px; border-radius: 15px; display: flex; justify-content: center;">
+            <div style="display: flex; height: auto; width: 100%; margin: 1.5em; align-items: center; gap: 20px;">
+                <img style="border-radius: 15px;height: 274px; width: 274px;" src="https://portal.inacap.cl/documents/47032/850324/bolsa-de-trabajo.png/d499e8f9-078e-2e0c-dde6-b1ac8c9eaa65?version=1.0&t=1718990450871" alt="">
+                <div style="display: flex; justify-content: space-between; flex-direction: column; height: 100%; position: relative;">
+                    <div style="display: flex; gap: 10px; margin-top: 10px;">
+                        <i style="background-color: #cc0000; min-height: 100%; min-width: 5px;" ></i>
+                        <h3 style="color: white; line-height: 1; font-weight: 600; margin: 0px; font-size: 22px;">Bolsa de trabajo INACAP</h3>
+                    </div>
+                    <a href="#" style="margin-bottom: 20px;bottom: 0;right: 0;position: absolute;padding: 7px 15px;border-radius: 23px;border: 2px solid white;width: fit-content;font-size: 17px;">Ver más<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"></path>
+                      </svg> </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div style="background-color: #222220; height: 310px; width: 610px; border-radius: 15px; display: flex; justify-content: center;">
+            <div style="display: flex; height: auto; width: 100%; margin: 1.5em; align-items: center; gap: 20px;">
+                <img style="border-radius: 15px;height: 274px; width: 274px;" src="https://portal.inacap.cl/documents/47032/850324/Proceso-de-Reclutamiento.jpg/bf7a8d0d-e645-1bdb-59b7-052b76b8c253?version=1.0&t=1718990451676" alt="">
+                <div style="display: flex; justify-content: space-between; flex-direction: column; height: 100%; position: relative;">
+                    <div style="display: flex; gap: 10px; margin-top: 10px;">
+                        <i style="background-color: #cc0000; min-height: 100%; min-width: 5px;" ></i>
+                        <h3 style="color: white; line-height: 1; font-weight: 600; margin: 0px; font-size: 22px;">Apoyo en reclutamiento y atracción de talento</h3>
+                    </div>
+                    <a href="#" style="margin-bottom: 20px;bottom: 0;right: 0;position: absolute;padding: 7px 15px;border-radius: 23px;border: 2px solid white;width: fit-content;font-size: 17px;">Ver más<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"></path>
+                      </svg> </a>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: #222220; height: 310px; width: 610px; border-radius: 15px; display: flex; justify-content: center;">
+            <div style="display: flex; height: auto; width: 100%; margin: 1.5em; align-items: center; gap: 20px;">
+                <img style="border-radius: 15px;height: 274px; width: 274px;" src="https://portal.inacap.cl/documents/47032/850324/Feria_Laboral_800x800-05.jpg/2e681d60-044c-d3bc-13ee-87279905f4bd?version=1.0&t=1718990451409" alt="">
+                <div style="display: flex; justify-content: space-between; flex-direction: column; height: 100%; position: relative;">
+                    <div style="display: flex; gap: 10px; margin-top: 10px;">
+                        <i style="background-color: #cc0000; min-height: 100%; min-width: 5px;" ></i>
+                        <h3 style="color: white; line-height: 1; font-weight: 600; margin: 0px; font-size: 22px;">Feria laboral INACAP-CPC</h3>
+                    </div>
+                    <a href="#" style="margin-bottom: 20px;bottom: 0;right: 0;position: absolute;padding: 7px 15px;border-radius: 23px;border: 2px solid white;width: fit-content;font-size: 17px;">Ver más<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"></path>
+                      </svg> </a>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: #222220; height: 310px; width: 610px; border-radius: 15px; display: flex; justify-content: center;">
+            <div style="display: flex; height: auto; width: 100%; margin: 1.5em; align-items: center; gap: 20px;">
+                <img style="border-radius: 15px;height: 274px; width: 274px;" src="https://portal.inacap.cl/documents/47032/850324/Emplea_Futuro-800x800.jpg/c67e7278-be00-edaa-1ce3-907919b38655?version=1.0&t=1718990451151" alt="">
+                <div style="display: flex; justify-content: space-between; flex-direction: column; height: 100%; position: relative;">
+                    <div style="display: flex; gap: 10px; margin-top: 10px;">
+                        <i style="background-color: #cc0000; min-height: 100%; min-width: 5px;" ></i>
+                        <h3 style="color: white; line-height: 1; font-weight: 600; margin: 0px; font-size: 22px;">Reconocimiento Empleo Futuro</h3>
+                    </div>
+                    <a href="#" style="margin-bottom: 20px;bottom: 0;right: 0;position: absolute;padding: 7px 15px;border-radius: 23px;border: 2px solid white;width: fit-content;font-size: 17px;">Ver más<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"></path>
+                      </svg> </a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    
+</div>
+
+{% endblock %}
