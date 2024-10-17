@@ -6,28 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Inicio{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+    <style>
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            gap: 5px;
+            display: flex;
+            align-items: baseline;
+            
+        }
+    </style>
+    <nav style="background-color: #1E1E1E; height: 7em; color: white;">
+        <div style="display: grid; grid-template-columns: 1fr 3.5fr; height: 100%; width: 100%; padding: 0px 10em;align-items: center;">
+            <a style="gap:0px; ">
+                <img src="static/images/logo-footer.png" height="35px" alt="">
+            </a>
+            <div style="display: flex; flex-direction: column; height: 100%;">
+                <div style="display: flex; justify-content: space-evenly;align-items: center;height: 50%; margin-top: 5px;">     
+                    <a href="#">Ed. Media</a>
+                    <a href="#">Estudiantes</a>
+                    <a href="#">Exalumnos</a>
+                    <a href="#">Docentes</a>
+                    <a href="#">Biblioteca</a>
+                    <a href="#">Empresas</a>
+                    <a href="#">Validar Certificados</a>
+                    <a href="#">Portal de Pagos <svg style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="6" height="6" fill="currentColor" class="bi bi-triangle-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767z"/>
+                      </svg></a>
+                    <a href="#">Acceso Intranet <svg style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="6" height="6" fill="currentColor" class="bi bi-triangle-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767z"/>
+                      </svg></a>
+                    <i class="bi bi-person-arms-up"></i>
+                </div>
+                <hr style="border-top:  1px solid white; opacity: 1; margin: 0px 0px 5px 0px;">
+                <div style="display: flex;justify-content: space-evenly;align-items: center;height: 50%;">
+                    <a href="">CFT INACAP  <svg style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="6" height="6" fill="currentColor" class="bi bi-triangle-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767z"/>
+                      </svg></a>
+                    <a href="">IP INACAP <svg style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="6" height="6" fill="currentColor" class="bi bi-triangle-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767z"/>
+                      </svg></a>
+                    <a href="">Educación Continua</a>
+                    <a href="">Universidad</a>
+                    <a href="">Financiamiento <svg style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="6" height="6" fill="currentColor" class="bi bi-triangle-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767z"/>
+                      </svg></a>
+                    <a href="">Sedes <svg style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="6" height="6" fill="currentColor" class="bi bi-triangle-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767z"/>
+                      </svg></a>
+                    <a href="">Carreras</a>
+                    <a href="">Noticias <svg style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="6" height="6" fill="currentColor" class="bi bi-triangle-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767z"/>
+                      </svg></a>
+                    <button style="background: white; padding: 5px 20px; border-radius: 20px; font-weight: bold;border: none;display: flex; flex-wrap: nowrap; align-items: center; gap: 5px;">Admisión
+                         <svg style="transform: rotate(90deg);" xmlns="http://www.w3.org/2000/svg" width="6" height="6" fill="currentColor" class="bi bi-triangle-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767z"/>
+                      </svg></button>
+                </div>
             </div>
-          </div>
         </div>
-      </nav>
-
-{% block content %}
-{% endblock %}
-
+    </nav>
+    {% block content %}
+    {% endblock %}
 </body>
-</html>
+    </html>
