@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<title>{% block title %}Portal Docentes INACAP{% endblock %}</title>
+<br><br><br><br><br>
+<div style="position: relative; display: inline-block;">
+    <img src="{% static 'images/docentes-banner-ppal.jpg'%}" alt="Portal de docentes" style="width: 1920px; height: 450px; filter: brightness(50%);" class="center">
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 50px; font-weight: bold; text-align: center;">Portal del Docente</div>
+
+    <div class="row" style="background-color: darkgrey;">
+        <div class="col">
+            <div class="card">
+                <div class="card-body" style="background-color: darkgrey;">
+                    <h5 class="card-title">Acceso a Intranet</h5>
+                    <a href="#" class="btn btn-primary" style="background-color: black;">Ingresar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body" style="background-color: darkgrey;">
+                    <h5 class="card-title">Mail Docente</h5>
+                    <a href="#" class="btn btn-primary" style="background-color: black;">Ingresar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body" style="background-color: darkgrey;">
+                    <h5 class="card-title">Juntos Cuidémonos</h5>
+                    <a href="#" class="btn btn-primary" style="background-color: transparent; color: black; border-color: black;">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body" style="background-color: darkgrey;">
+                    <h5 class="card-title">Servicios Tecnológicos</h5>
+                    <a href="#" class="btn btn-primary" style="background-color: transparent; color: black; border-color: black;">Revisa aquí</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div style="text-align: center; margin-top: 20px;">
+    <div style="max-width: 600px; margin: 0 auto;">
+        <h1>Modelo de Desarrollo y Gestión Docente TP</h1>
+        <p style="margin-bottom: 0;">Nuestro Modelo Educativo Técnico Profesional se apoya en más de 55 años de trayectoria formando con calidad y excelencia bajo el enfoque pedagógico del Aprender Haciendo. Por esto, hemos trabajado en un Modelo de Desarrollo y Gestión Docente - Técnico Profesional, que permita hacer evidente el aporte que representa tu labor en el aprendizaje de nuestros estudiantes, y que nos permita apoyar el desarrollo de tu trayectoria académica en la Institución, potenciando tus fortalezas y en base a tus intereses.</p>
+    </div>
+
+{% endblock %}
